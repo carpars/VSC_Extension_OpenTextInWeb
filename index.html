@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Extension build</title>
+    <base href="/" />
+    <link href="css/site.css" rel="stylesheet" />
+    <script src="js/site.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Rigth-click in selected text > shows it's traduction from [wordreference/linguee...]</h2>
+    <h3>BUILD THE EXTENSION</h3>
+    <h4>Text to try:</h4>
+    <p class="font-size-rem-1">
+        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+    </p>
+    <ul class="collection" id="actions-menu">
+        <li class="collection-item"><div>Edit<a href="#!" class="secondary-content"><i class="material-icons">edit</i></a></div></li>
+        <li class="collection-item active"><div>Delete<a href="#!" class="secondary-content red-text"><i class="material-icons">delete</i></a></div></li>
+        <li class="collection-item"><div>Duplicate<a href="#!" class="secondary-content"><i class="material-icons">content_copy</i></a></div></li>
+        <li class="collection-item"><div>Archive<a href="#!" class="secondary-content"><i class="material-icons">archive</i></a></div></li>
+      </ul>
+
+      <!--Bootstrap dropdown menu -->
+      <div class="dropdown">
+        <!-- Link or button to toggle dropdown -->
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li><a tabindex="-1" href="#">Action</a></li>
+          <li><a tabindex="-1" href="#">Another action</a></li>
+          <li><a tabindex="-1" href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+      <!--Bootstrap example -->
+      <div id="context-translation" class="container px-4 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="card">
+                <div class="row px-3"> <img class="profile-pic mr-3" src="https://i.imgur.com/6tPhTUn.jpg">
+                    <div class="flex-column">
+                        <h3 class="mb-0 font-weight-normal">Camilla Perez</h3> <select name="privacy" class="privacy">
+                            <option>Public post</option>
+                            <option>Private post</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row px-3 form-group"> <textarea class="text-muted bg-light mt-4 mb-3" placeholder="Hi Camilla, what's on your mind today?"></textarea> </div>
+                <div class="row px-3">
+                    <p class="fa fa-user options mb-0 mr-4"></p>
+                    <p class="fa fa-map-marker options mb-0 mr-4"></p>
+                    <p class="fa fa-image options mb-0 mr-4"></p> <img class="options" src="https://img.icons8.com/material/24/000000/more--v2.png" width="30px" height="28px">
+                    <div class="btn btn-success ml-auto">Post</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

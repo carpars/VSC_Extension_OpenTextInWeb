@@ -9,12 +9,12 @@ body {
     font-size: 1rem;
 }
 
-ul#actions-menu {
+/* ul#actions-menu {
     width: 200px;
     position: fixed;
     z-index: 99999;
               display: none;
-}
+} */
 
 /*** START Bootstrap context menu example 1 */
 /* body {
@@ -30,12 +30,19 @@ ul#actions-menu {
     z-index: 99999;
     display: none;
 }
-.card {
+
+.with-placeh:after {
+    content: "\f2a2";
+}
+#context-translation .card {
     border-radius: 10px;
-    width: 500px;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px
+    /* width: 500px;         */
+}
+
+#context-translation .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .profile-pic {

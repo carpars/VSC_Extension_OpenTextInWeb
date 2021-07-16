@@ -17,8 +17,8 @@
 //  });
 
   document.addEventListener( "contextmenu", function(e) {
-    e.preventDefault(); 
-           
+     e.preventDefault(); 
+       
     if (window.getSelection) {
       let selectedText = window.getSelection();
       showMenu(e, selectedText);
@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', function (e) {
   function showMenu(event, selectedText)
   {
     $("#context-translation").find("textarea").text(selectedText);
-    let detectingLanguage = browser.i18n.detectLanguage(selectedText);
+    //let detectingLanguage = browser.i18n.detectLanguage(selectedText); // TODO: uncomment
     document.querySelector("#context-translation").style.display = "inline-block";
     document.querySelector("#context-translation").style.top = event.clientY + "px";
     document.querySelector("#context-translation").style.left = event.clientX + "px";

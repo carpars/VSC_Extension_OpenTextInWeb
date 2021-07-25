@@ -32,11 +32,12 @@ window.addEventListener('DOMContentLoaded', function (e) {
   elementContextMenu.addEventListener('onkeyup', function (event) {
     alert("entre elemCont_ on key up");
   });
+  // document.getElementById("user-language").innerText = detectUserLanguage();
+  i18nInitialize();
 });
 
   document.addEventListener( "click", function(e) {    
-    var button = e.which || e.button;
-    debugger;
+    var button = e.which || e.button;    
     if ( button === 1 ) {
       let contextElement = e.target.closest("#context-translation");
       if (contextElement == undefined) {            
@@ -44,14 +45,9 @@ window.addEventListener('DOMContentLoaded', function (e) {
         }
       }     
     });    
-// });
 
-// window.onkeyup = function(e) {    
-  
-//     // if ( e.keyCode === 27 ) {                      
-//     //   hideMenu(e.target);
-//     // }
-//   }
+    function i18nInitialize(){
+    }
 
   function showMenu(event, selectedText)
   {
@@ -68,6 +64,10 @@ window.addEventListener('DOMContentLoaded', function (e) {
   function hideMenu()
   {       
       document.querySelector("#context-translation").style.display = "none";          
+  }
+
+  function detectUserLanguage() {            
+        return navigator.language;
   }
 
   function callApiLinguee(textToTranslate){

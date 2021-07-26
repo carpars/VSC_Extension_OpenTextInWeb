@@ -19,10 +19,10 @@
   document.addEventListener( "contextmenu", function(e) {
      e.preventDefault(); 
        
-    if (window.getSelection) {
+    // if (window.getSelection) {
       let selectedText = window.getSelection();
       showMenu(e, selectedText);
-    }
+    // }
     
             //callApiLinguee();
   });
@@ -51,6 +51,9 @@ window.addEventListener('DOMContentLoaded', function (e) {
 
   function showMenu(event, selectedText)
   {
+    //TODO Remove
+    selectedText = "There are close interrelationships";
+
     $("#context-translation").find("textarea").text(selectedText);
     //let detectingLanguage = browser.i18n.detectLanguage(selectedText); // TODO: uncomment
     document.querySelector("#context-translation").style.display = "inline-block";

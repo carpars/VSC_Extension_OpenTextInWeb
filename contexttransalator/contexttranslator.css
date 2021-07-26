@@ -57,7 +57,7 @@ textarea {
     padding: 15px 20px;
     border-radius: 10px;
     box-sizing: border-box;
-    color: #616161;
+    /* color: #616161; */
     border: 1px solid #F5F5F5;
     font-size: 16px;
     letter-spacing: 1px;
@@ -123,7 +123,7 @@ select:focus {
 }
 
 .language-select-container {
-    margin-top: -0.4rem;
+    /* margin-top: -0.4rem; */
 }
 .dark-grey {
     color: darkgrey;
@@ -171,7 +171,16 @@ select:focus {
     margin-bottom: 1rem;
 }
 
-#translation-result-container  > textarea {
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 10px;
+#context-translation .card #translation-result-container .form-group > textarea {
+    border: 1px solid rgba(0,0,0,.125) !important;
+    border-radius: 7px !important;
+    color: black !important;
+}
+
+body {
+    line-height: unset !important;
+}
+
+#button-copy {
+    margin: 0;
 }

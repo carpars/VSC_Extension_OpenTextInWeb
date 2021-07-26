@@ -56,9 +56,17 @@ window.addEventListener('DOMContentLoaded', function (e) {
 
     $("#context-translation").find("textarea").text(selectedText);
     //let detectingLanguage = browser.i18n.detectLanguage(selectedText); // TODO: uncomment
-    document.querySelector("#context-translation").style.display = "inline-block";
-    document.querySelector("#context-translation").style.top = event.clientY + "px";
-    document.querySelector("#context-translation").style.left = event.clientX + "px";
+    // document.querySelector("#context-translation").style.display = "inline-block";
+    // document.querySelector("#context-translation").style.top = event.clientY + "px";
+    // document.querySelector("#context-translation").style.left = event.clientX + "px";
+    $("#context-translation").css("position", "fixed");
+    $("#context-translation").css("display", "inline-block");
+    $("#context-translation").css("top", event.clientY + "px");
+    $("#context-translation").css("left", event.clientX + "px");
+
+    
+
+
     // document.querySelector("ul#actions-menu").style.display = "inline-block";
     // document.querySelector("ul#actions-menu").style.top = event.clientY + "px";
     // document.querySelector("ul#actions-menu").style.left = event.clientX + "px";

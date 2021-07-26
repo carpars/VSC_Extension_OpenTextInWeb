@@ -1,9 +1,7 @@
-body {
+/* body {
     height: 100%;
-    font-size: 15px;
-    color: lightgrey;
-    background-color: black;
-}
+    font-size: 15px;        
+} */
 
 .font-size-rem-1 {
     font-size: 1rem;
@@ -115,16 +113,10 @@ select:focus {
 /*** END Bootstrap context menu example 1 */
 
 #context-translation .card {
+    font-size: 15px !important;        
     padding: 2rem 1.5rem;
 }
 
-.language-select-container {
-    /* padding: 1.7rem 1rem;     */
-}
-
-.language-select-container {
-    /* margin-top: -0.4rem; */
-}
 .dark-grey {
     color: darkgrey;
 }
@@ -152,8 +144,16 @@ select:focus {
     top: -0.5rem !important;
 }
 
+.bu-big > div {
+    border-radius: 0.25rem;    
+}
+
 .language-select-container.form-group > label {
     margin-bottom: 0 !important;
+}
+
+#language-select-container.form-group > select {
+    display: block !important;
 }
 
 /* .border-black {
@@ -171,7 +171,12 @@ select:focus {
     margin-bottom: 1rem;
 }
 
+#context-translation .card {
+    box-shadow: 8px 8px 29px #888888;
+}
+
 #context-translation .card #translation-result-container .form-group > textarea {
+    padding: 1rem;
     border: 1px solid rgba(0,0,0,.125) !important;
     border-radius: 7px !important;
     color: black !important;
@@ -183,4 +188,12 @@ body {
 
 #button-copy {
     margin: 0;
+}
+
+#context-translation div:has(>#button-copy) {
+    padding: 0 15px !important;
+}
+
+.btn {
+    font-size: 0.85rem !important;
 }

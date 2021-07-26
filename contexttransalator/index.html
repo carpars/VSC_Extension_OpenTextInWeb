@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
     <h4>Rigth-click in selected text > shows it's traduction from [wordreference/linguee...]</h4>
     <h4>BUILD THE EXTENSION</h4>
     <h5>Text to try:</h5>
@@ -53,49 +53,63 @@
     <div id="context-translation">
         <div class="row d-flex justify-content-center">
             <div class="card">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-12">
                         <h6 class="font-weight-normal">Fast translation</h6>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
-                    <div class="col-6"> 
-                        <div class="language-select-container">
-                            From: <select name="privacy" class="privacy">
-                                <option>EN (detected)</option>
-                                <option>GER</option>
-                                <option>FR</option>
-                                <option>ES</option>
-                            </select>                       
-                        </div>                        
-                    </div>
-                    <div class="col-6">
-                        <!-- To: <span id="user-language"></span> -->
-                        <div class="language-select-container" style="float: right;">
-                            To: <select name="privacy" class="privacy">
-                                <option>EN (detected)</option>
-                                <option>GER</option>
+                    <div class="col-4">
+                        <div class="language-select-container form-group">
+                            <label class="dark-grey">From: </label>
+                            <select name="privacy" class="privacy">
+                                <option>GER (detected)</option>
+                                <option>EN</option>
                                 <option>FR</option>
                                 <option>ES</option>
                             </select>
-                        
-                    </div>  
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="btn btn-primary ml-auto w-100">Translate Again</div>
+                    </div>
+                    <div class="col-4">
+                        <!-- To: <span id="user-language"></span> -->
+                        <div class="language-select-container" style="float: right;">
+                            <p class="dark-grey">To: <br /><select name="privacy" class="privacy">
+                                    <option>EN (detected)</option>
+                                    <option>GER</option>
+                                    <option>FR</option>
+                                    <option>ES</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <div id="translation-result-container">
+                    <div class="col-12 form-group">
+                        <label>translation:</label>
+                        <textarea class="" style="color:black;"
+                            placeholder=" - Translation of the selected text">There are close interrelationships
+                        </textarea>
+                    </div>                    
                 </div>
-                <!-- TODO: Add button 'Re-translate', that gets the selected language as origin language -->
-                <div class="row px-3 form-group"> <textarea class="text-muted bg-light mt-4 mb-3"
-                        placeholder="- Translation of selected text -"></textarea> </div>
-                <div class="row px-3">
-                    <p class="fa fa-user options mb-0 mr-4"></p>
-                    <p class="fa fa-map-marker options mb-0 mr-4"></p>
-                    <p class="fa fa-image options mb-0 mr-4"></p> <img class="options"
-                        src="https://img.icons8.com/material/24/000000/more--v2.png" width="30px" height="28px">
-                    <div class="btn btn-success ml-auto">Copy to clipboard</div>
+                    <div class="row">
+
+                        <!-- <p class="fa fa-user options mb-0 mr-4"></p>
+                        <p class="fa fa-map-marker options mb-0 mr-4"></p>
+                        <p class="fa fa-image options mb-0 mr-4"></p> <img class="options"
+                            src="https://img.icons8.com/material/24/000000/more--v2.png" width="30px" height="28px"> -->
+                        <div class="col-4">&nbsp;</div>
+                        <div class="col-8 bu-big">&nbsp;
+                            <div class="btn btn-success ml-auto w-100">Copy to clipboard</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="translation-output"></div> 
 </body>
 
 </html>

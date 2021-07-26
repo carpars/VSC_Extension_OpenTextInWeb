@@ -114,6 +114,64 @@ select:focus {
 }
 /*** END Bootstrap context menu example 1 */
 
+#context-translation .card {
+    padding: 2rem 1.5rem;
+}
+
 .language-select-container {
-    font-size: 0.75rem;
+    /* padding: 1.7rem 1rem;     */
+}
+
+.language-select-container {
+    margin-top: -0.4rem;
+}
+.dark-grey {
+    color: darkgrey;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.fo-size-0d75 {
+    font-size: 0.75rem;   
+}
+
+.fo-size-0d9 {
+    font-size: 0.96rem !important;   
+}
+
+.pa-top-2rem {
+    padding-top: 2.4rem;  
+}
+
+.bu-big {
+    padding: 0;
+    margin-bottom: 1.7rem;
+    position: relative;
+    top: -0.5rem !important;
+}
+
+.language-select-container.form-group > label {
+    margin-bottom: 0 !important;
+}
+
+/* .border-black {
+    border: 1px solid black;
+    
+} */
+
+#translation-result-container {    
+    text-align: center; 
+    /* color: dark-grey; */
+}
+
+#translation-result-container .form-group > label {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#translation-result-container  > textarea {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;
 }
